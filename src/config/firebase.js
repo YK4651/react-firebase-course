@@ -1,21 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
-import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAlztMMVXKXA5oSVpwe0XthJ6TWNe31BSo",
-  authDomain: "fir-course-beba9.firebaseapp.com",
-  projectId: "fir-course-beba9",
-  storageBucket: "fir-course-beba9.appspot.com",
-  messagingSenderId: "236316955671",
-  appId: "1:236316955671:web:2b18d92e1b6644fae3f852",
-  measurementId: "G-HENJ7D82KH",
+  apiKey: "AIzaSyCR4wDJUuphQRQX08mS4AaDAysrPngl0D0",
+  authDomain: "fir-cours-cd50b.firebaseapp.com",
+  projectId: "fir-cours-cd50b",
+  storageBucket: "fir-cours-cd50b.appspot.com",
+  messagingSenderId: "544152594112",
+  appId: "1:544152594112:web:07e4a77ba9db1010032f25",
+  measurementId: "G-WWHJYJ67LB"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
-
-export const db = getFirestore(app);
-export const storage = getStorage(app);
